@@ -9,33 +9,34 @@
 </head>
 
 <body>
+     <div id="registerpage">
 <div id="background">
     <div class="container-fluid bg-1 text-center">
         <h1><b>BYME</b></h1>
         <h5><i>Another persons junk is another persons treasure</i></h5>
     </div>
 
+
     <div class="container-fluid bg-2 text-center">
         <h2> ----- REGISTER----- </h2>
         <label><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="user_name" required>
+        <input id = "usernameSignin" type="text" placeholder="Enter Username" name="user_name" required>
         <br>
         <label><b>Email Address</b></label>
         <input type="text" placeholder="Enter Email" name="user_email" required>
         <br>
         <label><b>Password</b></label>
         <br>
-        <input type="password" placeholder="Enter Password" name="user_pass" required>
+        <input id = "passwordSignin" type="password" placeholder="Enter Password" name="user_pass" required>
         <br>
-        <button class="button" type="submit">SIGN UP</button>
-        <h5>-- OR --</h5>
-        <span class="fblogin">Facebook</span>
+        <button id = "register" class="button" type="submit">SIGN UP</button>
+        
     </div>
     <div class="container-fluid bg-3 text-center">
         <span class="login">Already a User? <br><a href="index.html">LOGIN</a></span>
     </div>
     </div>
-
+    </div>
 </body>
 <script src='js/js.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
