@@ -22,7 +22,7 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-.loginbutton {
+.loginbutton, .submitbutton {
     background-color: #303030;
     color: #FFF176;
     padding: 14px 20px;
@@ -33,7 +33,7 @@
     box-shadow: 0 5px #444;
 }
 
-.loginbutton:active {
+.loginbutton:active, .submitbutton {
     background-color: #515151;
     box-shadow: 0 3px #333;
     transform: translateY(4px);
