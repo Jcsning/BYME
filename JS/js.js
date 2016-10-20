@@ -1,6 +1,6 @@
 
 var registerBut = document.getElementById("register");
-var showBut = document.getElementById("show");
+
 var username= document.getElementById("username");
 var password= document.getElementById("password");
 var fbBut= document.getElementById("facebook");
@@ -12,27 +12,31 @@ var passwordSignin= document.getElementById("passwordSignin");
 
 
 
-var siggninpage = document.getElementById("siggninpage");
+var signinpage = document.getElementById("signinpage");
 var registerpage = document.getElementById("registerpage");
 var newuser = document.getElementById("newuser");
 var already = document.getElementById("already");
+var profile = document.getElementById("profile");
+
 
 var applicants=[{
     username:"a00950419",
     password:"zxc",
 },
-                
-            
-    
+  
 ];
   
   newuser.onclick = function(){
+      
+      
+      signinpage.style.display = "none";
       registerpage.style.display = "block";
     
 }
   
   already.onclick = function(){
       registerpage.style.display = "none";
+      signinpage.style.display = "block";
   }
   registerBut.onclick = function() {
         var users = 
@@ -43,15 +47,27 @@ var applicants=[{
         }
 
         applicants.push(users);
-        console.log(applicants)
+        console.log(applicants);
+      alert("Congradulations! Register successfully!")
+       registerpage.style.display = "none";
+      signinpage.style.display = "block";
        
   }
   
+  var post = document.getElementById("post");
+  var posting = document.getElementById("posting")
+  post.onclick = function(){
+      profile.style.display = "none";
+      posting.style.display = "block";
+    
+    
+}
   
   
   login.onclick = function(){
       
       var index=0;
+      console.log(index);
       for(var i = 0; i < applicants.length; i++){
         
           if( usernameSignin.value  == applicants[i].username 
@@ -62,7 +78,7 @@ var applicants=[{
               index=1
           }
       }
-      if(index==0){
+      if(index == 0){
               alert("Try Again")
           }
   }
@@ -71,6 +87,12 @@ var applicants=[{
  
   //facebook login
   
+  
+  window.user = {  
+    name:"",
+    img:"",
+    };
+
   fbBut.onclick = function(){
   window.fbAsyncInit = function() {
     FB.init({
@@ -84,18 +106,31 @@ var applicants=[{
           console.log(resp);
           if(resp.status == "connected"){
               alert("You are connected to FB");
-              console.log(resp.authResponse.userID);
+               signinpage.style.display = "none";
+               profile.style.display = "block";
+  
+              
+              
+
               
               FB.api("/me?fields=id,name,picture",
                     function(uresp){
                   console.log(uresp.picture.data.url);
-                  var img = document.createElement(img);
-                  img.src = uresp.picture.data.url;
-                  document.body.appendChild(img);
+
+                  window.user.img = uresp.picture.data.url;
                   window.user.name = uresp.name;
+                  
+                  
+                  var userimg = document.getElementById("userimg")
+                  var facebookname = document.getElementById("facebookname")
+                  
+                  userimg.src = window.user.img;
+                  facebookname.innerHTML = window.user.name;
+          
+                  console.log(facebookname);
               });
           }else{
-              alert("go home")
+              alert("Try Again")
           }
       }) 
   };

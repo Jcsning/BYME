@@ -9,36 +9,193 @@
 </head>
 
 <body>
-    <div id="background">
+    
+    <!--Signin-->
+    <div id = "signinpage" >
+<div id="background">
+    <div class="container-fluid bg-1 text-center">
+        <h1><b>BYME</b></h1>
+        <h5><i>Another persons junk is another persons treasure</i></h5>
+    </div>
+    <br>
+    
+    <div class="container-fluid bg-2 text-center">
+        <h2> ----- SIGN IN ----- </h2>
+        <label><b>Username</b></label>
+        <br>
+        <input id = "username" type="text" placeholder="Enter Username" name="user_name" required>
+        <br>
+        <label><b>Password</b></label>
+        <br>
+        <input id = "password" type="password" placeholder="Enter Password" name="user_pass" required>
+        <br>
+        <br>
+        <button id = "login" class="loginbutton" id="login" type="submit">LOGIN</button>
+         <h5>-- OR --</h5>
+        <div class="social-wrap a">
+        <button id="facebook">Sign in with Facebook</button>
+        </div>
+      <br>
+        <br>
+    </div>
+    <div class="container-fluid bg-3 text-center">
+        <span class="forgot_password"><a href="password.html">Forgot Password</a></span>
+        <br>
+        <span id ="newuser" class="new_user">New User</span>
+    </div>
+    </div>
+      </div>
+    
+    
+    
+    <!--Register-->
+    <div id="registerpage" style = "display:none">
+<div id="background">
+    <div class="container-fluid bg-1 text-center">
+        <h1><b>BYME</b></h1>
+        <h5><i>Another persons junk is another persons treasure</i></h5>
+    </div>
+
+
+    <div class="container-fluid bg-2 text-center">
+        <h2> ----- REGISTER----- </h2>
+        <label><b>Username</b></label>
+        <input id = "usernameSignin" type="text" placeholder="Enter Username" name="user_name" required>
+        <br>
+        <label><b>Email Address</b></label>
+        <input type="text" placeholder="Enter Email" name="user_email" required>
+        <br>
+        <label><b>Password</b></label>
+        <br>
+        <input id = "passwordSignin" type="password" placeholder="Enter Password" name="user_pass" required>
+        <br>
+        <button id = "register" class="button" type="submit">SIGN UP</button>
+        
+    </div>
+    <div class="container-fluid bg-3 text-center">
+        <span class="login">Already a User? <br><span id = "already">LOGIN</span></span>
+    </div>
+    </div>
+    </div>
+    
+    
+    <!--user profile-->
+    <div id="profile" style = "display:none">
+        <div id="background">
         <div class="container-fluid bg-1 text-center">
-            <h1><b>BYME</b></h1>
-            <h5><i>Another persons junk is another persons treasure</i></h5>
+            <br>
+            <img id="userimg" src="images/logo1.png" class="img-circle-profile" alt="profilepic">
+            <div id="facebookname">NAME</div>
+            <div
+            class="fb-like"
+            data-share="true"
+            data-width="450"
+            data-show-faces="true"
+            style="color:red">
+            </div>
+            <div id="post">POSTS</div>
+
+
         </div>
         <br>
 
         <div class="container-fluid bg-2 text-center">
-            <h2> ----- SIGN IN ----- </h2>
-            <label><b>Username</b></label>
-            <br>
-            <input type="text" placeholder="Enter Username" name="user_name" required>
-            <br>
-            <label><b>Password</b></label>
-            <br>
-            <input type="password" placeholder="Enter Password" name="user_pass" required>
-            <br>
-            <br>
-            <button class="loginbutton" id="login" type="submit">LOGIN</button>
-            <h5>-- OR --</h5>
-            <span class="fblogin">Facebook</span>
-            <br>
-            <br>
+            <h2><b>----- LISTINGS -----</b></h2>
+            <div id="posting_1" class="postings"><img src="images/...png" class="img-circle" alt="listingpics">
+                <div id="posting_1_title" class="title"><h2>TITLE</h2></div>
+                <div id="posting_1_poster" class="poster">NAME</div>
+                <div id="posting_1_price" class="price">$100.00</div>
+            </div>
+
+            <div id="posting_2" class="postings"><img src="images/...png" class="img-circle" alt="listingpics">
+                <div id="posting_2_title" class="title"><h2>TITLE</h2></div>
+                <div id="posting_2_poster" class="poster">NAME</div>
+                <div id="posting_2_price" class="price">$100.00</div>
+            </div>
+            
+            <div id="posting_3" class="postings"><img src="images/...png" class="img-circle" alt="listingpics">
+                <div id="posting_4_title" class="title"><h2>TITLE</h2></div>
+                <div id="posting_4_poster" class="poster">NAME</div>
+                <div id="posting_4_price" class="price">$100.00</div>
+            </div>
+            
+            <div id="posting_4" class="postings"><img src="images/...png" class="img-circle" alt="listingpics">
+                <div id="posting_4_title" class="title"><h2>TITLE</h2></div>
+                <div id="posting_4_poster" class="poster">NAME</div>
+                <div id="posting_4_price" class="price">$100.00</div>
+            </div>
         </div>
-        <div class="container-fluid bg-3 text-center">
-            <span class="forgot_password"><a href="password.html">Forgot Password</a></span>
+    <div id="feedback" class="container-fluid bg-3 text-center">
+        <h2><b>----- FEEDBACK -----</b></h2>
+        <div class="fb-comments" data-href="http://Byme.jcsning.com" data-width="300" data-numposts="5"></div>
+    </div>
+    </div>
+    
+    <div id="user_interface" class="user_interface">
+        <div id="icon1"><a href="posting.html">H</a></div>
+        <div id="icon2">S</div>
+        <div id="icon3">M</div>
+        <div id="icon4">C</div>
+        <div id="icon5"><a href="profile.html">P</a></div>
+    </div>
+    </div>
+    
+    
+    <!--posting-->
+    <div id = "posting"  style = "display:none">
+    <div id="background">
+        <div id="header" class="header">
+            <h1><b>BYME</b></h1></div>
+        <div id="posting_listings1" class="container-fluid bg-1 text-center">
             <br>
-            <span class="new_user"><a href="register.html">New User</a></span>
+            <div class="col-sm-4">
+                <div class="polaroid">
+                    <img src="http://placekitten.com/100/100" alt="posting" style="width:100%">
+                    <div class="container">
+                        <h3>Cute Little Kitten</h3>
+                        <h2>$3000</h2>
+                        <button id="facebook_like">BLANK</button>
+                        <button id="facebook_share">BLANK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="posting_listings2" class="container-fluid bg-1 text-center">
+            <div class="col-sm-4">
+                <div class="polaroid">
+                    <img src="http://placekitten.com/100/100" alt="posting" style="width:100%">
+                    <div class="container">
+                        <h3>Cute Little Kitten</h3>
+                        <h2>$3000</h2>
+                        <button id="facebook_like">BLANK</button>
+                        <button id="facebook_share">BLANK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="posting_listings2" class="container-fluid bg-1 text-center">
+            <div class="col-sm-4">
+                <div class="polaroid">
+                    <img src="http://placekitten.com/100/100" alt="posting" style="width:100%">
+                    <div class="container">
+                        <h3>Cute Little Kitten</h3>
+                        <h2>$3000</h2>
+                        <button id="facebook_like">BLANK</button>
+                        <button id="facebook_share">BLANK</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+        <div id="user_interface" class="user_interface">
+            <div id="icon1"><a href="posting.html">H</a></div>
+            <div id="icon2">S</div>
+            <div id="icon3">M</div>
+            <div id="icon4">C</div>
+            <div id="icon5"><a href="profile.html">P</a></div>
+        </div></div>
+    
 </body>
 <script src='js/js.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
