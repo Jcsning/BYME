@@ -14,12 +14,11 @@
     color: #FFF176;
     padding: 14px 20px;
     width: 100vw;
-    height: 100vh;
 }
 
 #feedback {
     background-color: #303030;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Marker Felt', sans-serif;
 }
 
 .loginbutton, .submitbutton {
@@ -91,8 +90,8 @@ input[type=password]:focus {
 
 #background {
     background-color: #303030;
-    font-family: 'Quicksand', sans-serif;
-    height: 100%;
+    font-family: 'Marker Felt', sans-serif;
+    height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
@@ -105,13 +104,13 @@ input[type=password]:focus {
     bottom: 0;
     width: 100vw;
     height: 8vh;
-    background-color: #303030;
+    background-color: #5D639B;
     text-align: center;
 }
 
 .user_interface {
-    font-family: 'Quicksand', sans-serif;
-    color: #fff176;
+    font-family: 'Marker Felt', sans-serif;
+    color: #ffDF00;
     display: flex;
 }
 
@@ -127,13 +126,13 @@ input[type=password]:focus {
 .title,
 .price,
 .poster {
-    color: #FFF176;
+    color: #FFDF00;
     margin: 10px;
 }
 
 #header {
-    color: #FFF176;
-    background-color: #303030;
+    color: #FFDF00;
+    background-color: #5D639B;
     text-align: center;
     top: 0;
     position: fixed;
@@ -143,14 +142,14 @@ input[type=password]:focus {
 }
 
 #posting_listings1 {
-    background-color: #FFF176;
-    color: #303030;
+    background-color: #ACABA4;
+    color: #ACABA4;
     margin-top: 60px;
     z-index: 1;
 }
 #posting_listings2{
-    background-color: #FFF176;
-    color: #303030;
+    background-color: #ACABA4;
+    color: #ACABA4;
     z-index: 1;
 }
 
@@ -162,9 +161,9 @@ div.polaroid {
 }
 
 div.container {
-    color: #FFF176;
+    color: #FFDF00;
     padding: 10px;
-    background-color: #303030;
+    background-color: #5D639B;
 }
 
 @import "compass/css3";
@@ -181,7 +180,7 @@ div.container {
     background-repeat: no-repeat;
     border-radius: 4px;
     color: white;
-    font-family:"Merriweather Sans", sans-serif;
+    font-family:"Marker Felt", sans-serif;
     font-size: 14px;
     margin-bottom: 15px;
     width: 205px;
@@ -206,4 +205,6 @@ ul.sm-wrap li#facebook-sm {
     background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
 }
 
-
+#newuser {
+    cursor: pointer;
+}
