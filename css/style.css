@@ -317,8 +317,8 @@ img {
     height: 80px;
     width: 80px;
     float: left;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .post h1 {
@@ -338,7 +338,7 @@ img {
 /*-- //profile--*/
 
 .post {
-    background-color: #D3D3D3;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 90%;
     height: 150px;
     margin-left: 20px;
