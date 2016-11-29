@@ -1,7 +1,8 @@
 .register_email, .register_password, .register_confirm_password, .register_button{
     border: 1px solid yellow;
     margin: auto;
-    width: 50%;
+    width: 80%;
+    height:40px;
     display:block;
 }
 .register_page{
