@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home</title>
+<title>Profile</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
@@ -24,11 +24,35 @@
 </head>
 
 <body>
-    <div id = "headerpannel">
-         <a href =""><div id="categories_link">Categories</div></a>
-			<a href="homepage.html"><img src="images/logo2.png" alt=" " /></a>
+   <div id="background_homepage">
+
+        <div id = "headerpannel">
+         <div class="mobile-nav">
+     <div class="menu-btn" id="menu-btn">
+	<div></div>
+	<span></span>
+	<span></span>
+	<span></span>
+     </div>
+ 
+     <div class="responsive-menu">
+        <ul>
+           <li><a href="electronics.html">Electronics</a></li>
+           <li><a href="fashion.html.html">Fashion</a</li>
+            <li><a href="home.html">Home</a</li>
+            <li><a href="cars.html">Cars</a</li>
+            <li><a href="de.html">Digital Entertainment</a</li>
+            <li><a href="games.html">Games</a</li>
+            <li><a href="others.html">Others</a</li>
+        </ul>
+     </div>
+</div>
+			<a href="homepage.html"><img src="images/1-02.png" id="home_logo"/></a>
          <a href ="index.html"><div id="signout_link">Sign Out</div></a>
+         
                 </div>
+
+
 <div class="header-top-w3layouts">
 	<div class="container">
 		<div class="col-md-6 logo-w3">
@@ -41,10 +65,11 @@
     </div>
 	<div class="bg-1">
   <div class="container text-center">
-    <h3>Jason Ng</h3>
-    <a href="detail.html"><div class="user_profile"><img src="images/book1.png"></a></div>
+      <div id="postline"><h3>Jason Ng</h3></div>
+      <img src="images/1-02.png" class="search_logo" alt="Camera Icon" style="width:200px;height:200px;">
+   </div>
   </div>
-</div>
+
 
             <div id="postline">Recent Post</div>
                 
@@ -64,7 +89,10 @@
     <a href="profile.html"><img id="usericon" src="images/profile.png"></a>
     
     </div>
-
+    </div>
+       <div>
+<script src="js/homepage.js"></script>
+</div>
 	
 </body>
 </html>

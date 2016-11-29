@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Home</title>
+    <title>Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
@@ -18,11 +18,11 @@
     </script>
     <!-- css -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style3.css" type="text/css" media="all" />
+ 
     <link rel="stylesheet" href="css/style4.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all" />
     <!--// css -->
     <!-- font -->
@@ -37,58 +37,81 @@
 </head>
 
 <body>
-    <div class="header-top-w3layouts">
-        <div class="container">
-            <div class="col-md-6 logo-w3">
-                <a href="index.html"><img src="images/logo2.png" alt=" " />
-                    <h1>BYME</h1></a>
+
+    <div id="background">
+
+        <div id = "headerpannel">
+         <div class="mobile-nav">
+     <div class="menu-btn" id="menu-btn">
+	<div></div>
+	<span></span>
+	<span></span>
+	<span></span>
+     </div>
+ 
+     <div class="responsive-menu">
+        <ul>
+           <li><a href="electronics.html">Electronics</a></li>
+           <li><a href="fashion.html.html">Fashion</a</li>
+            <li><a href="home.html">Home</a</li>
+            <li><a href="cars.html">Cars</a</li>
+            <li><a href="de.html">Digital Entertainment</a</li>
+            <li><a href="games.html">Games</a</li>
+            <li><a href="others.html">Others</a</li>
+        </ul>
+     </div>
+</div>
+			<a href="homepage.html"><img src="images/1-02.png" id="home_logo"/></a>
+         <a href ="index.html"><div id="signout_link">Sign Out</div></a>
+         
+                </div>
+
+
+        <div class="header-top-w3layouts">
+            <div class="container">
+                <div class="col-md-6 logo-w3">
+                </div>
+                <br>
+                <br>
+
+                <div class="clearfix"></div>
+
             </div>
-
-            <div class="clearfix"></div>
-
         </div>
-    </div>
-    <div class="register_page">
-        <div>
-            <h2>Create your account</h2>
-        </div>
+        <h2>CREATE YOUR ACCOUNT</h2>
         <br>
-        <div>
+          <div>
             <input type="text" class="register_email" placeholder="email" />
         </div>
         <br>
         <div>
-            <input type="password" class="register_password" placeholder="password" />
+          <input type="password" class="register_password" placeholder="password" />
         </div>
         <br>
-        <div>
+           <div>
             <input type="password" class="register_confirm_password" placeholder="confirm password" />
         </div>
         <br>
-        <div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 wow fadeInLeft">
-                    <div class="slider-content text-center">
-                        <div class="btn-container">
-                            <button class="btn btn-default featured">Register</button>
-                        </div>
-                    </div>
-                </div>
+
+        <div class="slider-content text-center">
+            <div class="btn-container">
+                <button class="btn btn-default featured">Submit</button>
             </div>
         </div>
+
+
+
+        <div id="workpannel">
+            <a href="homepage.html"><img id="homepageicon" src="images/home.png"></a>
+            <a href="search.html"><img id="searchicon" src="images/search.png"></a>
+            <a href="Post.html"><img id="posticon" src="images/post.png"></a>
+            <a href="profile.html"><img id="usericon" src="images/profile.png"></a>
+
+        </div>
     </div>
-
-    <div id="workpannel">
-         <a href="homepage.html"><img id="homepageicon" src="images/home.png"></a>
-    <a href="search.html"><img id="searchicon" src="images/search.png"></a>
-   <a href="Post.html"><img id="posticon" src="images/post.png"></a>
-    <a href="profile.html"><img id="usericon" src="images/profile.png"></a>
-    
-    </div>
-
-    
-
+    <div>
+<script src="js/homepage.js"></script>
+</div>
 </body>
-
 
 </html>

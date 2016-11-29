@@ -23,3 +23,9 @@ searchicon.onclick = function(){
     contentHome.style.display = "none";
     contentSearch.style.display = "block";
 }
+
+jQuery(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        })
