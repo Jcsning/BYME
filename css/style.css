@@ -127,6 +127,7 @@ img {
 }
 
 .responsive-menu {
+    margin-top:14px;
     max-height: 0;
     background: rgba(0, 0, 0, 0.5);
     width:100vw;
